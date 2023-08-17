@@ -8,7 +8,7 @@ import axios from "axios";
 import { LogInData } from "@/Types/Types";
 import { toast } from "react-hot-toast";
 
-function login() {
+const Login = () => {
   const router = useRouter();
   const [inputs, setInputs] = useState<LogInData>({
     email: "",
@@ -95,6 +95,6 @@ function login() {
       </div>
     </Form>
   );
-}
+};
 
-export default login;
+export default Login;

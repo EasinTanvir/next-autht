@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 
-const page = () => {
+const VerifyPage = () => {
   const [token, setToken] = useState("");
   const [verify, setVerify] = useState(false);
 
@@ -40,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default VerifyPage;

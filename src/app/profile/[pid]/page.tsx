@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 
 const fetcher = (...args: any) => fetch(...args).then((res) => res.json());
-const profiledetaiuls = ({ params }: any) => {
+const Profiledetaiuls = ({ params }: any) => {
   const [user, setUser] = useState("");
   const userId = params.pid;
 
@@ -24,4 +24,4 @@ const profiledetaiuls = ({ params }: any) => {
   );
 };
 
-export default profiledetaiuls;
+export default Profiledetaiuls;

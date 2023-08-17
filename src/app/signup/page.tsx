@@ -8,7 +8,7 @@ import axios from "axios";
 import { SendData } from "@/Types/Types";
 import { toast } from "react-hot-toast";
 
-function signup() {
+const Signup = () => {
   const router = useRouter();
   const [inputs, setInputs] = useState<SendData>({
     username: "",
@@ -107,6 +107,6 @@ function signup() {
       </div>
     </Form>
   );
-}
+};
 
-export default signup;
+export default Signup;
